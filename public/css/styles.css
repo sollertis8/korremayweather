@@ -1,0 +1,73 @@
+.greeting {
+    font-family: comfortaa;
+    font-size: 16px;
+}
+
+.logo {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 20px;
+    top: 12px;
+}
+
+h1 {
+    font-size: 50px !important;
+    font-family: comfortaa;
+    font-weight: bold;
+}
+
+.top-section {
+    text-align: center;
+}
+
+nav {
+background-color: white !important;
+height: 100% !important;
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
+
+  .dev-photo {
+      padding: 20px;
+  }
+
+  .my-photo {
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+  }
+
+  .big-data {
+      padding: 20px;
+      margin: 0 auto;
+  }
+
+  .intro-section {
+      font-family: comfortaa;
+      color: white;
+      text-align: center;
+      width: 100%;
+      height: 500px;
+      background-color: #37b5e4;
+      padding-top: 60px;
+  }
+
+  .dev-info {
+      font-size: 17px;
+  }
+
+  .skills-section {
+      font-family: comfortaa;
+      color: black;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background-color: white;
+      
+  }
