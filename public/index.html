@@ -27,6 +27,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+        <script src="js/nav-scroll.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         <![endif]-->
 
     <script src="js/index.js"></script>
-    <nav class="top-nav">
+    <nav class="top-nav" id="top-nav">
         <div class="logo-container">
             <a href="/">
                 <img src="./images/KM-Logo.png" class="logo" />
@@ -43,262 +44,265 @@
 
         </div>
     </nav>
-    <div class="top-section">
-        <h1>Full Stack Developer</h1>
-        <div class="greeting">Hi, I'm Korrenti and I love all things code.</div>
-        <div class="dev-photo">
-            <img class="my-photo" src="images/korre-photo-cropped.png" />
-        </div>
-        <div class="big-data">
-            <img src="images/big-data-analytics.png" />
-        </div>
-    </div>
-    <div class="intro-section">
-        <div class="dev-info-title">
-            <h3>
-                <p>Nice to meet you. My friends call me Korre.</p>
-            </h3>
-        </div>
-        <div class="dev-info">
-            <p>I started my coding journey 5 years ago as a hobby and learned a bit of Java to develop my first</p>
-            <p>Android app. It wasn't the greatest app in the world but it gave me that spark for software development.</p>
-            <p>Since then I've learned several programming languages, delved into data science, and consulted with clients and
-            </p>
-            <p>startups alike. I've collaborated with some talented people on some interesting and exciting</p>
-            <p>projects and I'm just getting started. I can't wait to see what the future has in store!</p>
-        </div>
-    </div>
-    <div class="skills-section offset-sm-2 col-sm-12">
-        <h2>Skills</h2>
-        <div class="info-card col-lg-4">
-            <div class="card-container">
-                <div class="card">
-                    <div class="front">
-                        <div class="card-icon">
-                            <img src="" />
-                        </div>
-                        <div class="skills-icon">
-                            <i class="fas fa-code fa-3x"></i>
-                        </div>
-                        <div class="skill-title">
-                            Full Stack Developer
-                        </div>
-                        <div class="content">
-                            <div class="skill-description">
-                                <p>I like coding from sctrach</p>
-                                <p>as well as using frameworks</p>
-                                <p>to bring ideas to life.</p>
-                            </div>
-                            <div class="languages-title">
-                                Languages
-                            </div>
-                            <div class="languages">
-                                HTML, CSS, Javascript, Python, PHP
-                            </div>
-                            <p>&nbsp;</p>
-                            <div class="footer">
-                                <div class="rating">
-                                    <i class="fa fa-mail-forward"></i> Auto Rotation
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end front panel -->
-                    <div class="back">
-                        <div class="dev-tools">
-                            Development Tools:
-                        </div>
-                        <div class="content">
-                            <div class="dev-tools-list-dev">
-                                <p>React.js</p>
-                                <p>Node.js</p>
-                                <p>Express</p>
-                                <p>MongoDB</p>
-                                <p>Mongoose</p>
-                                <p>MySQL</p>
-                                <p>Mocha</p>
-                                <p>Chai</p>
-                                <p>Jest</p>
-                                <p>TravisCI</p>
-                                <p>Git/Github</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end back panel -->
-                </div>
-                <!-- end card -->
+    <main>
+        <div class="top-section">
+            <h1>Full Stack Developer</h1>
+            <div class="greeting">Hi, I'm Korrenti and I love all things code.</div>
+            <div class="dev-photo">
+                <img class="my-photo" src="images/korre-photo-cropped.png" />
             </div>
-            <!-- end card-container -->
+            <div class="big-data">
+                <img src="images/big-data-analytics.png" />
+            </div>
         </div>
-        <div class="info-card col-lg-4">
-            <div class="card-container">
-                <div class="card">
-                    <div class="front">
-                        <div class="card-icon">
-                            <img src="" />
-                        </div>
-                        <div class="skills-icon">
-                            <i class="fas fa-pencil-alt fa-3x"></i>
-                        </div>
-                        <div class="skill-title">
-                            Designer
-                        </div>
-                        <div class="content">
-                            <div class="skill-description">
-                                <p>I value clean, elegent, yet</p>
-                                <p>unique designs that are</p>
-                                <p>intuitive, functional, and</p>
-                                <p> efficient.</p>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
+        <div class="intro-section">
+            <div class="dev-info-title">
+                <h3>
+                    <p>Nice to meet you. My friends call me Korre.</p>
+                </h3>
+            </div>
+            <div class="dev-info">
+                <p>I started my coding journey 5 years ago as a hobby and learned a bit of Java to develop my first</p>
+                <p>Android app. It wasn't the greatest app in the world but it gave me that spark for software development.</p>
+                <p>Since then I've learned several programming languages, delved into data science, and consulted with clients
+                    and
+                </p>
+                <p>startups alike. I've collaborated with some talented people on some interesting and exciting</p>
+                <p>projects and I'm just getting started. I can't wait to see what the future has in store!</p>
+            </div>
+        </div>
+        <div class="skills-section offset-sm-2 col-sm-12">
+            <h2>Skills</h2>
+            <div class="info-card col-lg-4">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="card-icon">
+                                <img src="" />
                             </div>
-                            <div class="footer">
-                                <div class="rating">
-                                    <i class="fa fa-mail-forward"></i> Auto Rotation
+                            <div class="skills-icon">
+                                <i class="fas fa-code fa-3x"></i>
+                            </div>
+                            <div class="skill-title">
+                                Full Stack Developer
+                            </div>
+                            <div class="content">
+                                <div class="skill-description">
+                                    <p>I like coding from sctrach</p>
+                                    <p>as well as using frameworks</p>
+                                    <p>to bring ideas to life.</p>
+                                </div>
+                                <div class="languages-title">
+                                    Languages
+                                </div>
+                                <div class="languages">
+                                    HTML, CSS, Javascript, Python, PHP
+                                </div>
+                                <p>&nbsp;</p>
+                                <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end front panel -->
-                    <div class="back">
-                        <div class="dev-tools">
-                            Design Tools:
-                        </div>
-                        <div class="content">
-                            <div class="dev-tools-list">
-                                <p>Illustrator</p>
-                                <p>Photoshop</p>
-                                <p>Google Drawings</p>
-                                <p>Pen & Paper</p>
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="dev-tools">
+                                Development Tools:
+                            </div>
+                            <div class="content">
+                                <div class="dev-tools-list-dev">
+                                    <p>React.js</p>
+                                    <p>Node.js</p>
+                                    <p>Express</p>
+                                    <p>MongoDB</p>
+                                    <p>Mongoose</p>
+                                    <p>MySQL</p>
+                                    <p>Mocha</p>
+                                    <p>Chai</p>
+                                    <p>Jest</p>
+                                    <p>TravisCI</p>
+                                    <p>Git/Github</p>
+                                </div>
                             </div>
                         </div>
                         <!-- end back panel -->
                     </div>
+                    <!-- end card -->
                 </div>
-                <!-- end card -->
+                <!-- end card-container -->
             </div>
-            <!-- end card-container -->
-        </div>
-        <div class="info-card col-lg-4">
-            <div class="card-container">
-                <div class="card">
-                    <div class="front">
-                        <div class="card-icon">
-                            <img src="" />
-                        </div>
-                        <div class="skills-icon">
-                            <i class="fas fa-chart-bar fa-3x"></i>
-                        </div>
-                        <div class="skill-title">
-                            Data Analyst
-                        </div>
-                        <div class="content">
-                            <div class="skill-description">
-                                <p>From A/B testing to sentiment</p>
-                                <p>analysis and machine learning,</p>
-                                <p>I love solving problems with data.</p>
+            <div class="info-card col-lg-4">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="card-icon">
+                                <img src="" />
                             </div>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <p>&nbsp;</p>
-                            <div class="footer">
-                                <div class="rating">
-                                    <i class="fa fa-mail-forward"></i> Auto Rotation
+                            <div class="skills-icon">
+                                <i class="fas fa-pencil-alt fa-3x"></i>
+                            </div>
+                            <div class="skill-title">
+                                Designer
+                            </div>
+                            <div class="content">
+                                <div class="skill-description">
+                                    <p>I value clean, elegent, yet</p>
+                                    <p>unique designs that are</p>
+                                    <p>intuitive, functional, and</p>
+                                    <p> efficient.</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                                <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- end front panel -->
-                    <div class="back">
-                        <div class="dev-tools">
-                            Data Science Tools:
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="dev-tools">
+                                Design Tools:
+                            </div>
+                            <div class="content">
+                                <div class="dev-tools-list">
+                                    <p>Illustrator</p>
+                                    <p>Photoshop</p>
+                                    <p>Google Drawings</p>
+                                    <p>Pen & Paper</p>
+                                </div>
+                            </div>
+                            <!-- end back panel -->
                         </div>
-                        <div class="content">
-                            <div class="dev-tools-list">
-                                <p>Python</p>
-                                <p>Numpy</p>
-                                <p>Pandas</p>
-                                <p>Scipy</p>
-                                <p>Matplotlib</p>
-                                <p>Hadoop</p>
-                                <p>Jupyter Notebooks</p>
-                                <p>Seaborn</p>
-                                <p>Sklearn</p>
-                                <p>MySQL</p>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end card-container -->
+            </div>
+            <div class="info-card col-lg-4">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <div class="card-icon">
+                                <img src="" />
+                            </div>
+                            <div class="skills-icon">
+                                <i class="fas fa-chart-bar fa-3x"></i>
+                            </div>
+                            <div class="skill-title">
+                                Data Analyst
+                            </div>
+                            <div class="content">
+                                <div class="skill-description">
+                                    <p>From A/B testing to sentiment</p>
+                                    <p>analysis and machine learning,</p>
+                                    <p>I love solving problems with data.</p>
+                                </div>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- end back panel -->
+                        <!-- end front panel -->
+                        <div class="back">
+                            <div class="dev-tools">
+                                Data Science Tools:
+                            </div>
+                            <div class="content">
+                                <div class="dev-tools-list">
+                                    <p>Python</p>
+                                    <p>Numpy</p>
+                                    <p>Pandas</p>
+                                    <p>Scipy</p>
+                                    <p>Matplotlib</p>
+                                    <p>Hadoop</p>
+                                    <p>Jupyter Notebooks</p>
+                                    <p>Seaborn</p>
+                                    <p>Sklearn</p>
+                                    <p>MySQL</p>
+                                </div>
+                            </div>
+                            <!-- end back panel -->
+                        </div>
+                    </div>
+                    <!-- end card -->
+                </div>
+                <!-- end card-container -->
+            </div>
+        </div>
+        <div class="recent-projects-section col-sm-12">
+            <h2>Recent Projects</h2>
+            <div class="project col-lg-4">
+                <div id="cf">
+                    <img src="images/fanfare-bg.png" class="bottom" />
+                    <img src="images/Fanfare-Logo-for-KM.png" alt="Avatar" class="top" />
+                    <div class="overlay">
+                        <div class="text">A social app that allows street performers to connect with their fans.</div>
+                        <a href="https://fanfare.com">
+                            <button type="button" title="Fanfare Website" class="btn btn-info card-button">Visit Site
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/sollertis8/fanfare">
+                            <button type="button" title="Fanfare Github" class="btn btn-success card-button">Github
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <!-- end card -->
             </div>
-            <!-- end card-container -->
-        </div>
-    </div>
-    <div class="recent-projects-section col-sm-12">
-        <h2>Recent Projects</h2>
-        <div class="project col-lg-4">
-            <div id="cf">
-                <img src="images/fanfare-bg.png" class="bottom" />
-                <img src="images/Fanfare-Logo-for-KM.png" alt="Avatar" class="top" />
-                <div class="overlay">
-                    <div class="text">A social app that allows street performers to connect with their fans.</div>
-                    <a href="https://fanfare.com">
-                        <button type="button" title="Fanfare Website" class="btn btn-info card-button">Visit Site
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
-                    <a href="https://github.com/sollertis8/fanfare">
-                        <button type="button" title="Fanfare Github" class="btn btn-success card-button">Github
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="project col-lg-4">
-            <div id="cf">
-                <img src="images/mindstarter-bg.png" class="bottom" />
-                <img src="images/mindstarter.png" alt="Avatar" class="top" />
-                <div class="overlay">
-                    <div class="text">
-                        <p>A brainstorming app that visually shows relationships between words.</p>
+            <div class="project col-lg-4">
+                <div id="cf">
+                    <img src="images/mindstarter-bg.png" class="bottom" />
+                    <img src="images/mindstarter.png" alt="Avatar" class="top" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>A brainstorming app that visually shows relationships between words.</p>
+                        </div>
+                        <a href="https://mindstarter.com">
+                            <button type="button" title="Mindstarter Website" class="btn btn-info card-button">Visit Site
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/sollertis8/MindStarter">
+                            <button type="button" title="Mindstarter Github" class="btn btn-success card-button">Github
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
                     </div>
-                    <a href="https://mindstarter.com">
-                        <button type="button" title="Mindstarter Website" class="btn btn-info card-button">Visit Site
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
-                    <a href="https://github.com/sollertis8/MindStarter">
-                        <button type="button" title="Mindstarter Github" class="btn btn-success card-button">Github
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
                 </div>
             </div>
-        </div>
-        <div class="project col-lg-4">
-            <div id="cf">
-                <img src="images/medical-background-cropped.png" class="bottom" />
-                <img src="images/medmeister-logo.png" alt="Avatar" class="top" />
-                <div class="overlay">
-                    <div class="text">
-                        <p>An App for getting comprehensive information about doctors by location.</p>
+            <div class="project col-lg-4">
+                <div id="cf">
+                    <img src="images/medical-background-cropped.png" class="bottom" />
+                    <img src="images/medmeister-logo.png" alt="Avatar" class="top" />
+                    <div class="overlay">
+                        <div class="text">
+                            <p>An App for getting comprehensive information about doctors by location.</p>
+                        </div>
+                        <a href="https://sollertis8.github.io/medmeister/">
+                            <button type="button" title="Medmeister Website" class="btn btn-info card-button">Visit Site
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
+                        <a href="https://github.com/sollertis8/medmeister">
+                            <button type="button" title="Medmeister Github" class="btn btn-success card-button">Github
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </a>
                     </div>
-                    <a href="https://sollertis8.github.io/medmeister/">
-                        <button type="button" title="Medmeister Website" class="btn btn-info card-button">Visit Site
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
-                    <a href="https://github.com/sollertis8/medmeister">
-                        <button type="button" title="Medmeister Github" class="btn btn-success card-button">Github
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </a>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
