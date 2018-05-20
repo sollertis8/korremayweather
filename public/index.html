@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js">
+<html>
 <!--<![endif]-->
 
 <head>
@@ -22,12 +22,14 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Comfortaa" />
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <link rel="stylesheet" type="text/css" href="css/compiled.min.css" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
         <script src="js/nav-scroll.js"></script>
+        <script src="js/modal.js"></script>
 </head>
 
 <body>
@@ -39,9 +41,12 @@
     <nav class="top-nav" id="top-nav">
         <div class="logo-container">
             <a href="/">
-                <img src="./images/KM-Logo.png" class="logo" />
+                <img src="./images/KM-Logo-2.png" class="logo" />
             </a>
-
+           
+            <button type="button" title="Contact" class="btn btn-info contact-button" data-toggle="modal" data-target="#contactModal" data-whatever="@getbootstrap"><i class="far fa-address-book"></i> Contact
+                    
+                </button>
         </div>
     </nav>
     <main>
@@ -52,7 +57,7 @@
                 <img class="my-photo" src="images/korre-photo-cropped.png" />
             </div>
             <div class="big-data">
-                <img src="images/big-data-analytics.png" />
+                <img src="images/big-data-analytics.png" class="analytics"/>
             </div>
         </div>
         <div class="intro-section">
@@ -71,7 +76,7 @@
                 <p>projects and I'm just getting started. I can't wait to see what the future has in store!</p>
             </div>
         </div>
-        <div class="skills-section offset-sm-2 col-sm-12">
+        <div class="skills-section">
             <h2>Skills</h2>
             <div class="info-card col-lg-4">
                 <div class="card-container">
@@ -99,11 +104,11 @@
                                     HTML, CSS, Javascript, Python, PHP
                                 </div>
                                 <p>&nbsp;</p>
-                                <div class="footer">
+                                <!-- <div class="footer">
                                     <div class="rating">
-                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                        <i class="far fa-hand-point-right"></i> Tools on back
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- end front panel -->
@@ -113,9 +118,9 @@
                             </div>
                             <div class="content">
                                 <div class="dev-tools-list-dev">
-                                    <p>React.js</p>
-                                    <p>Node.js</p>
-                                    <p>Express</p>
+                                    <p><i class="fab fa-react"></i> React.js</p>
+                                    <p><i class="fab fa-node-js"></i> Node.js</p>
+                                    <p>Express.js</p>
                                     <p>MongoDB</p>
                                     <p>Mongoose</p>
                                     <p>MySQL</p>
@@ -123,7 +128,7 @@
                                     <p>Chai</p>
                                     <p>Jest</p>
                                     <p>TravisCI</p>
-                                    <p>Git/Github</p>
+                                    <p><i class="fab fa-github"></i> Git/Github</p>
                                 </div>
                             </div>
                         </div>
@@ -155,11 +160,11 @@
                                     <p>&nbsp;</p>
                                     <p>&nbsp;</p>
                                 </div>
-                                <div class="footer">
+                                <!-- <div class="footer">
                                     <div class="rating">
-                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                        <i class="far fa-hand-point-right"></i> Tools on back
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- end front panel -->
@@ -204,11 +209,11 @@
                                 <p>&nbsp;</p>
                                 <p>&nbsp;</p>
                                 <p>&nbsp;</p>
-                                <div class="footer">
+                                <!-- <div class="footer">
                                     <div class="rating">
-                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                        <i class="far fa-hand-point-right"></i> Tools on back
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <!-- end front panel -->
@@ -218,7 +223,7 @@
                             </div>
                             <div class="content">
                                 <div class="dev-tools-list">
-                                    <p>Python</p>
+                                    <p><i class="fab fa-python"></i> Python</p>
                                     <p>Numpy</p>
                                     <p>Pandas</p>
                                     <p>Scipy</p>
@@ -238,14 +243,15 @@
                 <!-- end card-container -->
             </div>
         </div>
-        <div class="recent-projects-section col-sm-12">
+        <div class="recent-projects-section">
             <h2>Recent Projects</h2>
-            <div class="project col-lg-4">
+         
+            <div class="project col-sm-4">
                 <div id="cf">
                     <img src="images/fanfare-bg.png" class="bottom" />
                     <img src="images/Fanfare-Logo-for-KM.png" alt="Avatar" class="top" />
                     <div class="overlay">
-                        <div class="text">A social app that allows street performers to connect with their fans.</div>
+                        <div class="text">A social app that helps street <br>performers connect with their fans.</div>
                         <a href="https://fanfare.com">
                             <button type="button" title="Fanfare Website" class="btn btn-info card-button">Visit Site
                                 <i class="fas fa-angle-right"></i>
@@ -259,13 +265,13 @@
                     </div>
                 </div>
             </div>
-            <div class="project col-lg-4">
+            <div class="project col-sm-4">
                 <div id="cf">
                     <img src="images/mindstarter-bg.png" class="bottom" />
                     <img src="images/mindstarter.png" alt="Avatar" class="top" />
                     <div class="overlay">
                         <div class="text">
-                            <p>A brainstorming app that visually shows relationships between words.</p>
+                            <p>A brainstorming app that depicts <br>word relationships</p>
                         </div>
                         <a href="https://mindstarter.com">
                             <button type="button" title="Mindstarter Website" class="btn btn-info card-button">Visit Site
@@ -280,13 +286,13 @@
                     </div>
                 </div>
             </div>
-            <div class="project col-lg-4">
+            <div class="project col-sm-4">
                 <div id="cf">
                     <img src="images/medical-background-cropped.png" class="bottom" />
                     <img src="images/medmeister-logo.png" alt="Avatar" class="top" />
                     <div class="overlay">
                         <div class="text">
-                            <p>An App for getting comprehensive information about doctors by location.</p>
+                            <p>An App for getting comprehensive <br>info about doctors by location.</p>
                         </div>
                         <a href="https://sollertis8.github.io/medmeister/">
                             <button type="button" title="Medmeister Website" class="btn btn-info card-button">Visit Site
@@ -301,8 +307,115 @@
                     </div>
                 </div>
             </div>
+        
         </div>
+         
     </main>
+<!--Footer-->
+<footer class="page-footer font-small pt-4 mt-4">
+        
+    <hr>
+        
+            <!--Social buttons-->
+            <div class="text-center">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm btn-fb mx-1" href="https://codepen.io/Korrenti/">
+                            <i class="fab fa-codepen fa-3x"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm btn-tw mx-1" href="https://github.com/sollertis8">
+                            <i class="fab fa-github fa-3x"> </i>
+                        </a>
+                    </li>
+                    
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm btn-li mx-1" href="https://www.linkedin.com/in/korrenti-mayweather-29607340/">
+                            <i class="fab fa-linkedin fa-3x"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="btn-floating btn-sm btn-dribbble mx-1">
+                            <i class="fab fa-dribbble fa-3x"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.Social buttons-->
+        
+            <!--Copyright-->
+            <div class="footer-copyright py-3 text-center">
+                © 2018 
+                <a href="https://korrentimayweather.com"> KorrentiMayweather.com </a>
+            </div>
+            <!--/.Copyright-->
+        
+        </footer>
+        <!--/.Footer-->
+    <!--Modal-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="contactModalLabel">Drop me a line!</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Name</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email-address" class="col-form-label">Email</label>
+                      <input type="email" class="form-control" id="email-address">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div><div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="contactModalLabel">New message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    <!--/.Modal-->
+   
 </body>
 
 </html>
