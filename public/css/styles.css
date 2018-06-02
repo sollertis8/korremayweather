@@ -39,7 +39,7 @@ main {
 h1 {
     margin: 0 !important;
     font-size: 50px !important;
-    font-family: comfortaa;
+    font-family: comfortaa !important;
     font-weight: bold;
 }
 
@@ -239,6 +239,7 @@ li {
     transition: .5s ease;
     background-color: #212a2e;
     border-radius: 5%;
+    padding: 0 7px;
 }
 
 .project:hover .overlay {

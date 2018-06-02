@@ -191,10 +191,10 @@ var numPoints = 50;
 /* var distanceTreshold = 100; */
 
 function init() {
-    can = document.getElementById("playArea");
-    ctx = can.getContext("2d");
-    width = $('body').width();
-    height = $('body').height();
+    can = document.getElementById('playArea');
+    ctx = can.getContext('2d');
+    width = $('#playArea').width();
+    height = $('#playArea').height();
 
     for (x = 0; x < numPoints; x++) {
         var newPoint = new Point();
